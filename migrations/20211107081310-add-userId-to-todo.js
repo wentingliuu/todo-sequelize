@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    // Add altering commands here.
+    // Add altering commands here
     return queryInterface.addColumn('Todos', 'UserId', {
       type: Sequelize.INTEGER,
       allowNull: false,
@@ -12,7 +12,7 @@ module.exports = {
     })
   },
   down: (queryInterface, Sequelize) => {
-    // Add reverting commands here.
+    // Add reverting commands here
     return queryInterface.removeColumn('Todos', 'UserId')
   }
 }
